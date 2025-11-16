@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 const LobbyHeader: React.FC = () => {
   return (
@@ -11,9 +12,9 @@ const LobbyHeader: React.FC = () => {
           Join an existing story or create your own.
         </p>
       </div>
-      <button className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors">
+      <Link href="/lobby/create" className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors">
         <span className="truncate">Create New Story</span>
-      </button>
+      </Link>
     </div>
   );
 };
